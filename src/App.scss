@@ -40,7 +40,7 @@ a{
         >a{
             margin-left: 30px;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 2vw;
             font-weight: 500;
         }
     }
@@ -54,6 +54,35 @@ a{
             color: rgb(171, 168, 168);
             
         }
+
+    }
+    
+}
+.lg{
+    display: block;
+}
+.sm{
+    display: none;
+}
+
+@media screen and (max-width: 660px) {
+    .header{
+        >div{
+            >a{
+                display:none;
+            }
+        }
+        
+       
+    }
+    .lg{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .sm{
+        display: block;
+        margin: 0;
     }
     
 }
