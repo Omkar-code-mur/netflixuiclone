@@ -1,0 +1,92 @@
+/** @format */
+
+.banner {
+  // background-image: url("https://image.tmdb.org/t/p/original/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg");
+  background-size: cover;
+  // scale: 0.5;
+  height: 600px;
+  // align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.4;
+  }
+  h1,
+  p {
+    color: white;
+    font-size: 2rem;
+    width: 50%;
+    z-index: 10;
+    padding-bottom: 10px;
+    background-color: inherit;
+    margin-left: 20px;
+  }
+  p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    background-color: none;
+    margin-left: 20px;
+  }
+  > div {
+    display: flex;
+    button {
+      padding: 1rem;
+      width: 130px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      z-index: 10;
+      margin: 1rem;
+      background-color: white;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s;
+      &:hover{
+        opacity: 0.6;
+      }
+      &:nth-child(even){
+        background-color: rgb(43, 42, 42);
+        color: white;
+      }
+      cursor: pointer;
+      svg{
+        font-size: 1.5rem;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+.row {
+  background-color: rgb(24, 24, 24);
+  padding: 1rem;
+
+  color: white;
+
+  > div {
+    display: flex;
+    height: 200px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+.card {
+  // height: 200px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  &:hover {
+    transform: translateY(-10px) scale(1.5);
+  }
+}

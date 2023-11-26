@@ -1,0 +1,59 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300;400&family=Poppins:wght@100;200;300;400;600&family=Roboto:wght@100;300;400&family=Smooch+Sans:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Roboto", sans-serif;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  
+}
+
+a{
+    color: white;
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    position: fixed;
+    z-index: 11;
+    // top:true;
+    width: 100%;
+    align-items: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: rgb(24, 24, 24);
+
+
+
+    > img{
+        margin-left: 25px;
+        height: 100%;
+    }
+    >div{
+        width: 100%;
+        margin-left: 4vmax;
+        >a{
+            margin-left: 30px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+    >svg{
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 11;
+
+        &:hover{
+            color: rgb(171, 168, 168);
+            
+        }
+    }
+    
+}
